@@ -39,8 +39,8 @@ $ cd ./gsm-demo-oas-repo
 $ git pull origin main
 $ cd ..
 
-## -- Now we have in .gitsubmodule an updated Commit ID of the 
-## -- latest version
+## -- Now we have in the project's .gitsubmodules file an updated 
+## -- Commit ID of the latest version
 
 # Let's "build" our project to generate a new OAS
 $ PROJECT_NAME=$(basename `git rev-parse --show-toplevel`)
@@ -57,7 +57,6 @@ $ cd ..
 # Now we push our component repo changes 
 # which contains a pointer to the just updated submodule repo
 $ git add .gitmodules
-$ git add gsm-demo-oas-repo
 $ git commit -m "Updated commit ID of git submodule"
 $ git push -u origin main
 ~~~
