@@ -2,7 +2,7 @@
 
 Demo service using Git Submodule to store generated (code-first) OAS 3.x files.
 
-## Initial setup
+## Initial setup (one time only)
 
 ~~~bash
 # Add central OAS repo as Git Submodule
