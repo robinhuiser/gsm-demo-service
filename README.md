@@ -37,6 +37,7 @@ Next, we can "release" a new API spec for our component - see the steps below wh
 # This assures we commit against main (for demo now)
 $ cd ./gsm-demo-oas-repo
 $ git pull origin main
+$ git checkout main
 $ cd ..
 
 ## -- Now we have in the project's .gitsubmodules file an updated 
@@ -56,9 +57,8 @@ $ cd ..
 
 # Now we push our component repo changes 
 # which contains a pointer to the just updated submodule repo
-$ git add .gitmodules
 $ git add ./gsm-demo-oas-repo
-$ git commit -m "Updated commit ID of git submodule"
+$ git commit -m "Updated submodule gsm-demo-oas-repo"
 $ git push -u origin main
 ~~~
 
