@@ -12,7 +12,7 @@ $ git submodule add \
 
 # Let's commit this change to the repo
 $ git add .gitmodules
-$ git add gsm-demo-oas-repo
+$ git add ./gsm-demo-oas-repo
 $ git commit -m "Added git submodule"
 $ git push -u origin main
 ~~~
@@ -57,6 +57,7 @@ $ cd ..
 # Now we push our component repo changes 
 # which contains a pointer to the just updated submodule repo
 $ git add .gitmodules
+$ git add ./gsm-demo-oas-repo
 $ git commit -m "Updated commit ID of git submodule"
 $ git push -u origin main
 ~~~
