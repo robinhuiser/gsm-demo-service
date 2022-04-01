@@ -37,10 +37,14 @@ Next, we can "release" a new API spec for our component - see the steps below wh
 # This assures we commit against main (for demo now)
 $ cd ./gsm-demo-oas-repo
 $ git pull origin main
+
+# Make sure we can make modifications and push these back to the repo
+# If you do not do this... you will be making changes against
+# a locally detached HEAD.
 $ git checkout main
 $ cd ..
 
-## -- Now we have in the project's .gitsubmodules file an updated 
+## -- Now we have in the project's .git directory an updated 
 ## -- Commit ID of the latest version
 
 # Let's "build" our project to generate a new OAS
